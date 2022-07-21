@@ -1,16 +1,12 @@
+import React from 'react';
+// import UilReact from '@iconscout/react-unicons/icons/uil-react';
+import s from './App.module.css';
+import TopButtons from './TopButtons/TopButtons';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div className={s.container}>
+      <TopButtons/>
     </div>
   );
 };
