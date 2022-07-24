@@ -7,6 +7,8 @@ import {
   UilWind,
   UilSun,
   UilSunset,
+  UilArrowUp,
+  UilArrowDown,
 } from "@iconscout/react-unicons";
 import { formatToLocalTime, iconUrlFromCode } from "../../services/weatherService";
 
@@ -72,14 +74,14 @@ function TemperatureAndDetails({
         </p>
         <p className={s.mrL}>|</p>
 
-        <UilSun />
+        <UilArrowUp />
         <p className="font-light">
           High:{" "}
           <span className="font-medium ml-1">{`${temp_max.toFixed()}°`}</span>
         </p>
         <p className={s.mrL}>|</p>
 
-        <UilSun />
+        <UilArrowDown />
         <p className="font-light">
           Low:{" "}
           <span className="font-medium ml-1">{`${temp_min.toFixed()}°`}</span>
