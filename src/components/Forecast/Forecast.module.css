@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.containercol{
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    text-transform: uppercase;
+}

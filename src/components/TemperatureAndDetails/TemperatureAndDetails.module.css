@@ -1,0 +1,37 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    margin: 0;
+    padding: 0;
+}
+
+.position{
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.icon{
+    width: 150px;
+}
+
+.temperature{
+    font-size: 70px;
+    font-weight: 500;
+}
+.ihg{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+.iconMr{
+    margin-right: 10px;
+}
+.mrL{
+    margin-left: 10px;
+    margin-right: 10px;
+}
