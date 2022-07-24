@@ -34,11 +34,11 @@ export const App = () => {
   }, [query, units]);
 
   const formatBackground = () => {
-    if (!weather) return "cold-background";
-    const threshold = units === "metric" ? 20 : 60;
-    if (weather.temp <= threshold) return "cold-background";
+    if (!weather) return "coldBackground";
+    const threshold = units === "metric" ? 30 : 60;
+    if (weather.temp <= threshold) return "coldBackground";
 
-    return "hot-background";
+    return "hotBackground";
   };
 
   return (
@@ -48,7 +48,7 @@ export const App = () => {
       <Inputs setQuery={setQuery} units={units} setUnits={setUnits}/>
       </div>
       {weather && (
-        <div className={`${formatBackground() , s.main}`}>
+        <div className={`${formatBackground()} main`}>
           <TimeAndLocation weather={weather} />
           <TemperatureAndDetails weather={weather} />
           <Forecast title="hourly forecast" items={weather.hourly} />
