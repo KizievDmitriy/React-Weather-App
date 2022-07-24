@@ -37,38 +37,38 @@ function TemperatureAndDetails({
           <img src={iconUrlFromCode(icon)} alt="weather icon" className={s.icon} />
         <p className={s.temperature}>{`${temp.toFixed()}°`}</p>
         <div className={s.ihg}>
-          <div className="">
+          <div>
             <UilTemperature size={18} className={s.iconMr} />
             Real feel:
-            <span className="font-medium ml-1"> {`${feels_like.toFixed()}°`}</span>
+            <span> {`${feels_like.toFixed()}°`}</span>
           </div>
-          <div className="">
+          <div>
             <UilTear size={18} className={s.iconMr} />
             Humidity:
-            <span className="font-medium ml-1"> {`${humidity.toFixed()}%`}</span>
+            <span> {`${humidity.toFixed()}%`}</span>
           </div>
-          <div className="">
+          <div>
             <UilWind size={18} className={s.iconMr} />
             Wind:
-            <span className="font-medium ml-1"> {`${speed.toFixed()} km/h`}</span>
+            <span> {`${speed.toFixed()} km/h`}</span>
           </div>
         </div>
       </div>
 
       <div className={s.container}>
         <UilSun />
-        <p className="font-light">
+        <p>
           Rise:{" "}
-          <span className="font-medium ml-1">
+          <span>
             {formatToLocalTime(sunrise, timezone, "hh:mm a")}
           </span>
         </p>
         <p className={s.mrL}>|</p>
 
         <UilSunset />
-        <p className="font-light">
+        <p>
           Set:{" "}
-          <span className="font-medium ml-1">
+          <span>
             {formatToLocalTime(sunset, timezone, "hh:mm a")}
           </span>
         </p>
@@ -77,14 +77,14 @@ function TemperatureAndDetails({
         <UilArrowUp />
         <p className="font-light">
           High:{" "}
-          <span className="font-medium ml-1">{`${temp_max.toFixed()}°`}</span>
+          <span>{`${temp_max.toFixed()}°`}</span>
         </p>
         <p className={s.mrL}>|</p>
 
         <UilArrowDown />
-        <p className="font-light">
+        <p >
           Low:{" "}
-          <span className="font-medium ml-1">{`${temp_min.toFixed()}°`}</span>
+          <span>{`${temp_min.toFixed()}°`}</span>
         </p>
       </div>
     </div>

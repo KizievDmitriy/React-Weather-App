@@ -6,10 +6,10 @@ function TimeAndLocation({ weather: { dt, timezone, name, country } }) {
   return (
     <div>
       <div className={s.overlay}>
-        <p className="">
+        <p>
           {formatToLocalTime(dt, timezone)}
         </p>
-        <h1 className="">{`${name} , ${country}`}</h1>
+        <h1>{`${name} , ${country}`}</h1>
       </div>
     </div>
   );

@@ -6,10 +6,10 @@ function Forecast({ title, items }) {
   console.log(items);
   return (
     <div >
-      <div className="flex items-center justify-start mt-6">
+      <div>
         <p className={s.p}>{title}</p>
       </div>
-      <hr className="my-2" />
+      <hr/>
 
       <div className={s.container}>
         {items.map((item, index) => (
@@ -17,13 +17,12 @@ function Forecast({ title, items }) {
             key={index}
             className={s.containercol}
           >
-            <p className="font-light text-sm">{item.title}</p>
+            <p>{item.title}</p>
             <img
               src={iconUrlFromCode(item.icon)}
-              className="w-12 my-1"
-              alt=""
+              alt="icon weather"
             />
-            <p className="font-medium">{`${item.temp.toFixed()}°`}</p>
+            <p>{`${item.temp.toFixed()}°`}</p>
           </div>
         ))}
       </div>
